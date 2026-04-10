@@ -1,0 +1,48 @@
+# --- Hardware Description Languages ---
+*.v
+*.sv
+*.vhd
+*.vhdl
+!src/**/*.v
+!src/**/*.sv
+
+# --- Simulation & Synthesis Tools ---
+# ModelSim
+results/waveform/*.wlf
+results/waveform/*.vcd
+transcript
+vsim.wlf
+work/
+*.log
+
+# Vivado
+.Xil/
+*.jou
+*.log
+*.pb
+*.str
+*.dir/
+xsim.dir/
+xsim.log
+xsim.jou
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# --- OS & IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# --- Results & Reports ---
+results/power_reports/*.txt
+results/timing_reports/*.txt
+!results/comparison_tables/*.csv
